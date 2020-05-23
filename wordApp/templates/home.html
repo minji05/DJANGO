@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock-Scissors-Paper</title>
+    </head>
+    <body>
+        <h1>1.Rock 2.scissor 3. Paper</h1>
+        <h2>1-3 Number input?</h2>
+        <div>
+            <form action="{% url 'result' %}">
+              <textarea cols="40" rows="10" name="fulltext"></textarea>
+              <br>
+              <input type="submit" value="시작">
+            </form>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESULT</title>
+    </head>
+    <body>
+  
+        {% if full == 1 and computer == 2 or full == 2 and computer == 3 or full == 3 and computer == 1 %}
+        <h1>You! Win</h1>
+        
+        {% elif full == 1 and computer == 1 or full == 2 and computer == 2 or full == 3 and computer == 3 %}
+        <h1>You! Draw</h1>
+     
+        {% else %}
+        <h1>You! Lose</h1>
+        
+        {% endif %}
+        <a href="{% url 'home' %}">HOME으로 돌아가기</a>
+    </body>
+</html>
