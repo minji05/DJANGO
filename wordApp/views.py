@@ -9,9 +9,9 @@ def home(request):
 def result(request):
 
     computer = random.randint(1,3)
-    data = ["", "Rock", "Scissor", "Paper"]
     print("\n1.Rock 2.scissor 3. Paper")
     print("1-3 Number input?")
     text = request.GET['fulltext']
+    text = int(text)
     return render(request, 'result.html', {'full': text, 'computer' : computer})
 
